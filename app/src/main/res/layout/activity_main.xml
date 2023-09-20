@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Microsoft Identity Platform Sample"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MSAL-Android Version: 4.7.0"
+        android:textAlignment="textStart"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_msalMetadataInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get App Metadata"
+            android:background="@drawable/square_button"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Login"
+            android:background="@drawable/square_button"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_signOut"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Logout"
+            android:background="@drawable/square_button"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="10dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_user_details"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.8"
+        android:background="#FFFFDD"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+
+
+    <Button
+        android:id="@+id/btn_callGraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/square_button"
+        android:text="Call Graph API (User-Profile)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Logs and Errors"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingHorizontal="10dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_log"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.8"
+        android:background="#FFFFDD"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:text="Please signin with your work or school account." />
+
+</LinearLayout>
